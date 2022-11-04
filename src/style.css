@@ -18,6 +18,10 @@ ul {
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
+.todolistappx{
+    display:none;
+}
+
 li {
   display: flex;
   align-items: center;
