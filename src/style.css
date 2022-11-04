@@ -23,9 +23,6 @@ li{
     align-items:center;
     justify-content:space-between;
     width:100%;
-    border-width: 0.5px 0px;
-    border-style: solid;
-    border-color:lightgray;
 }
 hr{
     background-color:gray;
@@ -36,10 +33,7 @@ hr{
     color:lightgray;
     height:35px;
     margin-top:8px;
-    border-top:0.8px;
-    margin-bottom:8px;
-    border-style:solid;
-
+   
 }
 .check{
     margin-right:25px;
@@ -65,4 +59,20 @@ button{
 .flexer{
     display:flex;
     align-items:center;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+}
+.del{
+    width: 10px;
+    height: 10px;
+}
+.flexerere{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-width: 0.5px 0px;
+    border-style: solid;
+    border-color:lightgray;
 }
