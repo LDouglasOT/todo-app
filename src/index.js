@@ -21,15 +21,37 @@ cleandata.forEach((item)=>{
    ul.innerHTML +=`
    <div class="delete">
    <div class="flexer"><input type="checkbox" class="check"/><h5>${item.description}</h5></div>
-   <h6 class="deletetodo" index=${item.index} type="button">del</h6>
+   <h6 class="deletetodo" data-id=${item.index} type="button">del</h6>
    </div>
    `
 })
 
 const item=document.querySelector(".htmls")
 item.appendChild(ul)
+const deletebtn=document.querySelectorAll('.deletetodo')
+console.log("engage")
+deletebtn.forEach((item) => {
+  item.addEventListener("click", () =>{
+    console.log(item.getAttribute("data-id"))
+    let data=JSON.parse(localStorage.getItem("deletetodo")) || []
+    data.pop(item.getAttribute("data-id"))
+    localStorage.setItem("deletetodo",JSON.stringify(data))
+    // cleandata.filter(element=>element.index==item.getAttribute("data-id"))
+    
+    cleandata=[...data]
+    
+  })
+})
+
+
 }
 addliststodom()
+
+const setitems=()=>{
+  addliststodom()
+  
+}
+
 
 const addtodo=document.querySelector(".enter")
 addtodo.addEventListener("keypress",(event)=>{
@@ -43,9 +65,4 @@ addtodo.addEventListener("keypress",(event)=>{
        localStorage.setItem("deletetodo",JSON.stringify(cleandata))
        ul.innerHTML = ""
        addliststodom()
-
-    }
-})
-
-
-}
+}})}
