@@ -52,6 +52,8 @@ edithx.forEach((item)=>{
    item.addEventListener('click',()=>{
       const div=document.createElement("div")
       const input =document.createElement("input")
+      console.log(item.innerHTML)
+      input.setAttribute('placeholder',item.innerHTML)
       input.className="modified"
       input.setAttribute("data-id",Number(item.getAttribute("data-id")))
       item.style.display='none'
@@ -60,6 +62,10 @@ edithx.forEach((item)=>{
       const inputelement=document.querySelector(".modified")
       inputelement.addEventListener("keypress",(event)=>{
          if (event.key === "Enter") {
+            if(inputelement.value==""){
+              addliststodom()
+              return
+            }
             let data=JSON.parse(localStorage.getItem("deletetodo")) || []
             let datax=-1
             datax += parseInt(inputelement.getAttribute("data-id"))
