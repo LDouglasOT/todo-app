@@ -5,21 +5,20 @@
 }
 
 .container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-ul {
   width: 30%;
-  padding: 0;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
-.todolistappx {
-  display: none;
+ul {
+  width: 100%;
+  padding: 0;
 }
 
 li {
@@ -88,4 +87,8 @@ button {
   color: gray;
   font-size: 20px;
   margin: 0;
+}
+
+.htmls {
+  width: 100%;
 }
