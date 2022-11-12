@@ -98,6 +98,7 @@ button {
   background-color: rgb(207, 228, 74);
   color: white;
 }
-#striked{
+
+#striked {
   text-decoration: line-through;
 }
