@@ -30,7 +30,12 @@ const addliststodom=()=>{
 
 data.map((item)=>{
    const li=document.createElement('li')
-   li.innerHTML=`<div class="flexer"><input type="checkbox" class="check"/><h5>${item.description}</h5></div>`
+   li.innerHTML=`
+   <div class="delete">
+   <div class="flexer"><input type="checkbox" class="check"/><h5>${item.description}</h5></div>
+   <h6>del</h6>
+   </div>
+   `
 
 ul.append(li)
 })

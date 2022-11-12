@@ -1,68 +1,91 @@
 
- 
-*{
-    list-style:none;
-    text-decoration:none;
-   
+* {
+  list-style: none;
+  text-decoration: none;
 }
 
-.container{
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:100%;
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
-ul{
-    width:30%;
-    padding:0px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-li{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    width:100%;
-    border-width: 0.5px 0px;
-    border-style: solid;
-    border-color:lightgray;
-}
-hr{
-    background-color:gray;
-}
-.enter{
-    width:100%;
-    border:0px solid transparent;
-    color:lightgray;
-    height:35px;
-    margin-top:8px;
-    border-top:0.8px;
-    margin-bottom:8px;
-    border-style:solid;
 
+ul {
+  width: 30%;
+  padding: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
-.check{
-    margin-right:25px;
-    margin-left:5px;
+
+.todolistappx {
+  display: none;
 }
-h3{
-    color:rgb(73, 73, 73)
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-width: 0.5px 0;
+  border-style: solid;
+  border-color: lightgray;
 }
-h5{
-    color:rgb(73, 73, 73);
-    font-size: 14px;
-    font-weight:normal;    
+
+hr {
+  background-color: gray;
 }
-button{
-    width: 100%;
-    border:0px solid gray;
-    height:50px;
-    background-color: Transparent;
-    color: gray;
-    font-size:15px;
-    cursor:pointer;
+
+.enter {
+  width: 100%;
+  border: 0 solid transparent;
+  color: lightgray;
+  height: 35px;
+  margin-top: 8px;
+  border-top: 0.8px;
+  margin-bottom: 8px;
+  border-style: solid;
 }
-.flexer{
-    display:flex;
-    align-items:center;
+
+.check {
+  margin-right: 25px;
+  margin-left: 5px;
+}
+
+h3 {
+  color: rgb(73, 73, 73);
+}
+
+h5 {
+  color: rgb(73, 73, 73);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+button {
+  width: 100%;
+  border: 0 solid gray;
+  height: 50px;
+  background-color: transparent;
+  color: gray;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.flexer {
+  display: flex;
+  align-items: center;
+}
+
+.delete {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  align-items: center;
+}
+
+.delete h6 {
+  color: gray;
+  font-size: 20px;
+  margin: 0;
 }
