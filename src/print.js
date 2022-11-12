@@ -9,12 +9,13 @@ export const clearall=(index)=>{
 }
 
 
-export const falsify=(addliststodom,index)=>{
+export const falsify=(addliststodom,index,checked)=>{
   let data=JSON.parse(localStorage.getItem("deletetodo")) || []
             let datax=-1
             datax += parseInt(index)
             console.log(falsify)
-            data[datax].completed=true
+            console.log(checked)
+            data[datax].completed=!data[datax].completed
             console.log(data[datax])
             localStorage.setItem("deletetodo",JSON.stringify(data))
             addliststodom()

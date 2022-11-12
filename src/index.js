@@ -58,7 +58,7 @@ completed.addEventListener('click',()=>{
 const checks=document.querySelectorAll(".check")
 checks.forEach((item)=>{
 item.addEventListener('change',()=>{
-  falsify(addliststodom,parseInt(item.getAttribute('data-id')))
+  falsify(addliststodom,parseInt(item.getAttribute('data-id')),item.checked)
 })
 })
 
