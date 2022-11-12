@@ -53,7 +53,7 @@ edithx.forEach((item)=>{
       const div=document.createElement("div")
       const input =document.createElement("input")
       console.log(item.innerHTML)
-      input.setAttribute('placeholder',item.innerHTML)
+      input.setAttribute('value',item.innerHTML)
       input.className="modified"
       input.setAttribute("data-id",Number(item.getAttribute("data-id")))
       item.style.display='none'
@@ -84,6 +84,9 @@ addliststodom()
 const addtodo=document.querySelector(".enter")
 addtodo.addEventListener("keypress",(event)=>{
     if (event.key === "Enter") {
+      if(addtodo.value==""){
+        return
+      }
        let target=1
        let data=JSON.parse(localStorage.getItem("deletetodo")) || []
        let cleandata=data
