@@ -10,20 +10,15 @@
   align-items: start;
   justify-content: start;
   height: 100%;
-  margin-left:auto;
-  margin-right:auto;
-  flex-direction:column;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
 ul {
   width: 100%;
   padding: 0;
-
-}
-
-.todolistappx {
-  /* display: none; */
 }
 
 li {
@@ -94,6 +89,6 @@ button {
   margin: 0;
 }
 
-.htmls{
+.htmls {
 width:100%;
 }
