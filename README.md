@@ -94,7 +94,7 @@ Give a ⭐️ if you like this project!
 - Our God & families
 - Microverse
 - Microverse team members for the extra help & guidance:
- 1. [Kidde60](https://github.com/ldouglasot)
+ 1. [ldouglasot](https://github.com/ldouglasot)
 - Microverse TSEs
 
 ## 📝 License
