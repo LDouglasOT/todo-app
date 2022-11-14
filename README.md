@@ -76,8 +76,8 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Luzinda Douglas**
 
-- GitHub: [@kidde60](https://github.com/kidde60)
-- LinkedIn: [@George William Kidde](https://linkedin.com/in/george-william-kidde-b5b772231/)
+- GitHub: [@kidde60](https://github.com/Ldouglasot)
+- LinkedIn: [@Luzinda Douglas](https://linkedin.com/in/ldouglasot/)
 
 ## 🤝 Contributing
 
@@ -94,7 +94,7 @@ Give a ⭐️ if you like this project!
 - Our God & families
 - Microverse
 - Microverse team members for the extra help & guidance:
- 1. [Kidde60](https://github.com/kidde60)
+ 1. [Kidde60](https://github.com/ldouglasot)
 - Microverse TSEs
 
 ## 📝 License
