@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1668786961128" clover="3.2.0">
-  <project timestamp="1668786961128" name="All files">
-    <metrics statements="28" coveredstatements="6" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="0" elements="42" coveredelements="6" complexity="0" loc="28" ncloc="28" packages="1" files="1" classes="1"/>
+<coverage generated="1668790740510" clover="3.2.0">
+  <project timestamp="1668790740510" name="All files">
+    <metrics statements="28" coveredstatements="13" conditionals="6" coveredconditionals="2" methods="8" coveredmethods="2" elements="42" coveredelements="17" complexity="0" loc="28" ncloc="28" packages="1" files="1" classes="1"/>
     <file name="print.js" path="/Users/activeapps/Desktop/Todolist-structure/src/print.js">
-      <metrics statements="28" coveredstatements="6" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="0"/>
+      <metrics statements="28" coveredstatements="13" conditionals="6" coveredconditionals="2" methods="8" coveredmethods="2"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="4" count="0" type="stmt"/>
@@ -19,19 +19,19 @@
       <line num="16" count="0" type="stmt"/>
       <line num="17" count="0" type="stmt"/>
       <line num="20" count="1" type="stmt"/>
-      <line num="21" count="0" type="stmt"/>
-      <line num="22" count="0" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
       <line num="25" count="1" type="stmt"/>
-      <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="27" count="0" type="stmt"/>
-      <line num="28" count="0" type="stmt"/>
-      <line num="29" count="0" type="stmt"/>
+      <line num="26" count="1" type="cond" truecount="2" falsecount="0"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
       <line num="30" count="0" type="stmt"/>
       <line num="31" count="0" type="stmt"/>
-      <line num="33" count="0" type="stmt"/>
-      <line num="37" count="1" type="stmt"/>
-      <line num="38" count="0" type="stmt"/>
-      <line num="41" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="38" count="1" type="stmt"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

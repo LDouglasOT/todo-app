@@ -31,6 +31,7 @@ removeTask=(id)=>{
       i += 1;
     });
     localStorage.setItem("deletetodo",JSON.stringify(data)) 
+    
 }
 
 
