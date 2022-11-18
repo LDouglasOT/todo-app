@@ -1,15 +1,11 @@
-export default function printMe() {
-    console.log('I get called from print.js!');
-}
-export const clearall=(index)=>{
+
+clearall=(index)=>{
   let data=JSON.parse(localStorage.getItem("deletetodo")) || []
   data=data.filter((element)=>element.completed !== true)
-
   localStorage.setItem("deletetodo",JSON.stringify(data))
 }
 
-
-export const falsify=(addliststodom,index,checked)=>{
+falsify=(addliststodom,index,checked)=>{
   let data=JSON.parse(localStorage.getItem("deletetodo")) || []
             let datax=-1
             datax += parseInt(index)
@@ -19,4 +15,33 @@ export const falsify=(addliststodom,index,checked)=>{
             console.log(data[datax])
             localStorage.setItem("deletetodo",JSON.stringify(data))
             addliststodom()
+}
+
+addTask=(todos,data)=>{
+  data.push(todos)
+  localStorage.setItem("deletetodo",JSON.stringify(data))
+}
+
+removeTask=(id)=>{
+  let data=JSON.parse(localStorage.getItem("deletetodo")) || []
+    data=data.filter((element)=>element.index !== Number(id))
+    let i = 1;
+    data.forEach((todo) => {
+      todo.index = i;
+      i += 1;
+    });
+    localStorage.setItem("deletetodo",JSON.stringify(data)) 
+}
+
+
+sum=(c,y)=>{
+  return c+y
+}
+
+module.exports={
+  removeTask,
+  addTask,
+  falsify,
+  clearall,
+  sum
 }
