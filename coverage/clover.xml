@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1668786401643" clover="3.2.0">
-  <project timestamp="1668786401643" name="All files">
-    <metrics statements="28" coveredstatements="7" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="1" elements="42" coveredelements="8" complexity="0" loc="28" ncloc="28" packages="1" files="1" classes="1"/>
+<coverage generated="1668786961128" clover="3.2.0">
+  <project timestamp="1668786961128" name="All files">
+    <metrics statements="28" coveredstatements="6" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="0" elements="42" coveredelements="6" complexity="0" loc="28" ncloc="28" packages="1" files="1" classes="1"/>
     <file name="print.js" path="/Users/activeapps/Desktop/Todolist-structure/src/print.js">
-      <metrics statements="28" coveredstatements="7" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="1"/>
+      <metrics statements="28" coveredstatements="6" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="0"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
       <line num="4" count="0" type="stmt"/>
@@ -30,7 +30,7 @@
       <line num="31" count="0" type="stmt"/>
       <line num="33" count="0" type="stmt"/>
       <line num="37" count="1" type="stmt"/>
-      <line num="38" count="1" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
       <line num="41" count="1" type="stmt"/>
     </file>
   </project>
