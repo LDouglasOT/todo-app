@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import './style.css';
-import Utility from './print.js';
+import { removeTask,addTask,falsify,clearall,editTodo} from './print.js';
 window.onload=()=>{
 let cleandata=[];
 const ul=document.createElement('ul')
@@ -32,7 +32,7 @@ const deletebtn=document.querySelectorAll('.deletetodo')
 console.log("engage")
 deletebtn.forEach((item) => {
   item.addEventListener("click", () =>{
-    Utility.removeTask(item.getAttribute("data-id"))
+    removeTask(item.getAttribute("data-id"))
     addliststodom()
   })
 
@@ -41,15 +41,13 @@ deletebtn.forEach((item) => {
 const checkmark=document.querySelectorAll('.check')
 const completed=document.querySelector('.completed')
 completed.addEventListener('click',()=>{
-  checkmark.forEach((element)=>{
-    Utility.clearall(element)
-   })
+    clearall()
    addliststodom()    
 })
 const checks=document.querySelectorAll(".check")
 checks.forEach((item)=>{
 item.addEventListener('change',()=>{
-  Utility.falsify(addliststodom,parseInt(item.getAttribute('data-id')),item.checked)
+  falsify(addliststodom,parseInt(item.getAttribute('data-id')),item.checked)
 })
 })
 
@@ -72,13 +70,8 @@ edithx.forEach((item)=>{
               addliststodom()
               return
             }
-            let data=JSON.parse(localStorage.getItem("deletetodo")) || []
-            let datax=-1
-            datax += parseInt(inputelement.getAttribute("data-id"))
-            console.log(inputelement.value)
-            data[datax].description=inputelement.value
-            console.log(data[datax])
-            localStorage.setItem("deletetodo",JSON.stringify(data))
+            console.log(inputelement.getAttribute("data-id"))
+            editTodo(inputelement.getAttribute("data-id"),inputelement.value)
             addliststodom()
 
 }})})})}
@@ -96,7 +89,7 @@ addtodo.addEventListener("keypress",(event)=>{
       let cleandata=data
       target +=cleandata.length
       let todos=new todo(target,addtodo.value,false)
-      Utility.addTask(todos,cleandata)
+      addTask(todos,cleandata)
       addliststodom()
 }})
 }

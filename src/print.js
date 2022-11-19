@@ -1,5 +1,5 @@
 
-clearall=(index)=>{
+clearall=()=>{
   let data=JSON.parse(localStorage.getItem("deletetodo")) || []
   data=data.filter((element)=>element.completed !== true)
   localStorage.setItem("deletetodo",JSON.stringify(data))
@@ -9,10 +9,7 @@ falsify=(addliststodom,index,checked)=>{
   let data=JSON.parse(localStorage.getItem("deletetodo")) || []
             let datax=-1
             datax += parseInt(index)
-            console.log(falsify)
-            console.log(checked)
             data[datax].completed=!data[datax].completed
-            console.log(data[datax])
             localStorage.setItem("deletetodo",JSON.stringify(data))
             addliststodom()
 }
@@ -38,11 +35,21 @@ removeTask=(id)=>{
 sum=(c,y)=>{
   return c+y
 }
+editTodo=(id,value)=>{
+  let data=JSON.parse(localStorage.getItem("deletetodo")) || []
+  let datax=-1
+  datax += parseInt(id)
+  data[datax].description=value
+  console.log(data[datax].index)
+  localStorage.setItem("deletetodo",JSON.stringify(data))
+}
+
 
 module.exports={
   removeTask,
   addTask,
   falsify,
   clearall,
-  sum
+  editTodo,
+  sum,
 }

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">43.33% </span>
+                <span class="strong">88.23% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>13/30</span>
+                <span class='fraction'>30/34</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">62.5% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/6</span>
+                <span class='fraction'>5/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/8</span>
+                <span class='fraction'>6/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.42% </span>
+                <span class="strong">90.62% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>13/28</span>
+                <span class='fraction'>29/32</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -110,23 +110,27 @@
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
 <a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -150,30 +154,37 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-clearall=<span class="fstat-no" title="function not covered" >(i</span>ndex)=&gt;{
-  let data=<span class="cstat-no" title="statement not covered" >JSON.parse(localStorage.getItem("deletetodo")) || []</span>
-<span class="cstat-no" title="statement not covered" >  data=data.filter(<span class="fstat-no" title="function not covered" >(e</span>lement)=&gt;<span class="cstat-no" title="statement not covered" >element.completed !== true)</span></span>
-<span class="cstat-no" title="statement not covered" >  localStorage.setItem("deletetodo",JSON.stringify(data))</span>
+clearall=()=&gt;{
+  let data=JSON.parse(localStorage.getItem("deletetodo")) || <span class="branch-1 cbranch-no" title="branch not covered" >[]</span>
+  data=data.filter((element)=&gt;element.completed !== true)
+  localStorage.setItem("deletetodo",JSON.stringify(data))
 }
 &nbsp;
-falsify=<span class="fstat-no" title="function not covered" >(a</span>ddliststodom,index,checked)=&gt;{
-  let data=<span class="cstat-no" title="statement not covered" >JSON.parse(localStorage.getItem("deletetodo")) || []</span>
-            let datax=<span class="cstat-no" title="statement not covered" >-1</span>
-<span class="cstat-no" title="statement not covered" >            datax += parseInt(index)</span>
-<span class="cstat-no" title="statement not covered" >            console.log(falsify)</span>
-<span class="cstat-no" title="statement not covered" >            console.log(checked)</span>
-<span class="cstat-no" title="statement not covered" >            data[datax].completed=!data[datax].completed</span>
-<span class="cstat-no" title="statement not covered" >            console.log(data[datax])</span>
-<span class="cstat-no" title="statement not covered" >            localStorage.setItem("deletetodo",JSON.stringify(data))</span>
-<span class="cstat-no" title="statement not covered" >            addliststodom()</span>
+falsify=(addliststodom,index,checked)=&gt;{
+  let data=JSON.parse(localStorage.getItem("deletetodo")) || <span class="branch-1 cbranch-no" title="branch not covered" >[]</span>
+            let datax=-1
+            datax += parseInt(index)
+            data[datax].completed=!data[datax].completed
+            localStorage.setItem("deletetodo",JSON.stringify(data))
+            addliststodom()
 }
 &nbsp;
 addTask=(todos,data)=&gt;{
@@ -197,13 +208,23 @@ removeTask=(id)=&gt;{
 sum=<span class="fstat-no" title="function not covered" >(c</span>,y)=&gt;{
 <span class="cstat-no" title="statement not covered" >  return c+y</span>
 }
+editTodo=(id,value)=&gt;{
+  let data=JSON.parse(localStorage.getItem("deletetodo")) || <span class="branch-1 cbranch-no" title="branch not covered" >[]</span>
+  let datax=-1
+  datax += parseInt(id)
+  data[datax].description=value
+  console.log(data[datax].index)
+  localStorage.setItem("deletetodo",JSON.stringify(data))
+}
+&nbsp;
 &nbsp;
 module.exports={
   removeTask,
   addTask,
   falsify,
   clearall,
-  sum
+  editTodo,
+  sum,
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -211,7 +232,7 @@ module.exports={
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-11-19T10:13:24.955Z
+                at 2022-11-19T19:09:11.028Z
             </div>
         <script src="prettify.js"></script>
         <script>
