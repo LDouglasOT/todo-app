@@ -76,7 +76,6 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Luzinda Douglas**
 
-- GitHub: [@kidde60](https://github.com/Ldouglasot)
 - LinkedIn: [@Luzinda Douglas](https://linkedin.com/in/ldouglasot/)
 
 ## 🤝 Contributing
