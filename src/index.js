@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import './style.css';
-import {clearall,falsify} from './print.js';
+import Utility from './print.js';
 window.onload=()=>{
 let cleandata=[];
 const ul=document.createElement('ul')
@@ -32,16 +32,7 @@ const deletebtn=document.querySelectorAll('.deletetodo')
 console.log("engage")
 deletebtn.forEach((item) => {
   item.addEventListener("click", () =>{
-    let data=JSON.parse(localStorage.getItem("deletetodo")) || []
-    data=data.filter((element)=>element.index !== Number(item.getAttribute("data-id")))
-    console.log(data)
-    let i = 1;
-    data.forEach((todo) => {
-      todo.index = i;
-      console.log(todo.index)
-      i += 1;
-    });
-    localStorage.setItem("deletetodo",JSON.stringify(data)) 
+    Utility.removeTask(item.getAttribute("data-id"))
     addliststodom()
   })
 
@@ -51,14 +42,14 @@ const checkmark=document.querySelectorAll('.check')
 const completed=document.querySelector('.completed')
 completed.addEventListener('click',()=>{
   checkmark.forEach((element)=>{
-      clearall(element)
+    Utility.clearall(element)
    })
    addliststodom()    
 })
 const checks=document.querySelectorAll(".check")
 checks.forEach((item)=>{
 item.addEventListener('change',()=>{
-  falsify(addliststodom,parseInt(item.getAttribute('data-id')),item.checked)
+  Utility.falsify(addliststodom,parseInt(item.getAttribute('data-id')),item.checked)
 })
 })
 
@@ -100,15 +91,13 @@ addtodo.addEventListener("keypress",(event)=>{
       if(addtodo.value==""){
         return
       }
-       let target=1
-       let data=JSON.parse(localStorage.getItem("deletetodo")) || []
-       let cleandata=data
-       target +=cleandata.length
-       console.log(target)
-       let todos=new todo(target,addtodo.value,false)
-       cleandata.push(todos)
-       localStorage.setItem("deletetodo",JSON.stringify(cleandata))
-       addliststodom()
+      let target=1
+      let data=JSON.parse(localStorage.getItem("deletetodo")) || []
+      let cleandata=data
+      target +=cleandata.length
+      let todos=new todo(target,addtodo.value,false)
+      Utility.addTask(todos,cleandata)
+      addliststodom()
 }})
 }
 
