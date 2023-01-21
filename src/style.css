@@ -92,13 +92,3 @@ button {
 .htmls {
   width: 100%;
 }
-
-.completed {
-  width: 100%;
-  background-color: rgb(207, 228, 74);
-  color: white;
-}
-
-#striked {
-  text-decoration: line-through;
-}

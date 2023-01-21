@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import './style.css';
-import {clearall,falsify} from './print.js';
+import printMe from './print.js';
 window.onload=()=>{
 let cleandata=[];
 const ul=document.createElement('ul')
@@ -20,7 +20,7 @@ cleandata=JSON.parse(localStorage.getItem('deletetodo')) || []
 cleandata.forEach((item)=>{
    ul.innerHTML +=`
    <div class="delete">
-   <div class="flexer"><input type="checkbox" ${item.completed ? "checked":""} data-id=${item.index} class="check"/><div class="editcontainer"><h5 class="edithx" id='${item.completed ? "striked":"notstriked"}' data-id=${item.index}>${item.description}</h5></div></div>
+   <div class="flexer"><input type="checkbox" data-id=${item.index} class="check"/><div class="editcontainer"><h5 class="edithx" data-id=${item.index}>${item.description}</h5></div></div>
    <h6 class="deletetodo" data-id=${item.index} type="button"><img src="https://img.icons8.com/material-rounded/18/ff0000/delete-forever.png"/></h6>
    </div>
    `
@@ -45,21 +45,6 @@ deletebtn.forEach((item) => {
     addliststodom()
   })
 
-})
-
-const checkmark=document.querySelectorAll('.check')
-const completed=document.querySelector('.completed')
-completed.addEventListener('click',()=>{
-  checkmark.forEach((element)=>{
-      clearall(element)
-   })
-   addliststodom()    
-})
-const checks=document.querySelectorAll(".check")
-checks.forEach((item)=>{
-item.addEventListener('change',()=>{
-  falsify(addliststodom,parseInt(item.getAttribute('data-id')),item.checked)
-})
 })
 
 const edithx=document.querySelectorAll(".edithx") 
@@ -90,9 +75,11 @@ edithx.forEach((item)=>{
             localStorage.setItem("deletetodo",JSON.stringify(data))
             addliststodom()
 
-}})})})}
+}})})})
+}
 
 addliststodom()
+
 
 const addtodo=document.querySelector(".enter")
 addtodo.addEventListener("keypress",(event)=>{
@@ -109,7 +96,4 @@ addtodo.addEventListener("keypress",(event)=>{
        cleandata.push(todos)
        localStorage.setItem("deletetodo",JSON.stringify(cleandata))
        addliststodom()
-}})
-}
-
-
+}})}
